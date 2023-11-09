@@ -1,6 +1,7 @@
 const rect = document.querySelector('.center');
  rect.addEventListener('mousemove', (details) =>{
  let rectangleLocation = rect.getBoundingClientRect()
+ console.log(rectangleLocation.width)
   rectangleVal = details.clientX - rectangleLocation.left;
  
   if(rectangleVal < rectangleLocation.width * (1/3)){
